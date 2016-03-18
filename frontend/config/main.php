@@ -28,7 +28,6 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => false,
@@ -44,7 +43,6 @@ return [
                 // 'DELETE <controller:[\w-]+>/<id:\d+>' => '<controller>/delete',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
