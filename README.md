@@ -1,3 +1,40 @@
+# Yii2 高级模板
+
+> 自己项目用，请勿直接使用，出任何问题概不负责，项目仅供参考。
+
+## 安装
+
+克隆后执行下面命令：
+
+``` sh
+$ composer install --prefer-dist --optimize-autoloader
+```
+
+安装依赖即可，composer 镜像都配置好了的。
+
+## nginx 控制
+
+其他配置都一样，但是要开启 pathinfo 支持以及 rewrite。
+
+``` 
+# 开启 php 并支持 pathinfo
+include enable-php-pathinfo.conf;
+
+# yii2 rewrite
+location / {
+    try_files $uri $uri/ /index.php?$args;
+}
+```
+
+默认开启了 `urlManager` 前后端也都配置好了规则。
+
+---
+
+**以下是 Yii2 官方描述。**
+
+---
+
+
 Yii 2 Advanced Project Template
 ===============================
 
@@ -12,9 +49,6 @@ deploying the application in different environments.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
 
 DIRECTORY STRUCTURE
 -------------------
