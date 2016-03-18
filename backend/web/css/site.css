@@ -108,8 +108,8 @@ a.desc:after {
 
 /* 登录页面 */
 .login-page{background-color:#303642;color:#fff;}
-.login-header{height:190px;background-color:#373E4B;}
-.login-header h1{line-height:140px;}
+.login-header{display: -webkit-box;display: flex;display: -webkit-flex;height: 30%;background-color:#373E4B;-webkit-box-align: center;-webkit-align-items: center;align-items: center;-webkit-box-pack: center;-webkit-justify-content: center;justify-content: center;}
+.login-header h1{ }
 .login-body{min-height:inherit;}
 .login-body>.container{padding:30px 15px 20px;}
 .login-body::before{display:block;margin:auto;width:32px;height:32px;border:16px solid #303642;border-top-color:#373E4B;}
