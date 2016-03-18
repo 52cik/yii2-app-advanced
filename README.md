@@ -12,7 +12,36 @@ $ composer install --prefer-dist --optimize-autoloader
 
 安装依赖即可，composer 镜像都配置好了的。
 
-## nginx 控制
+### 1. 初始化项目
+
+``` sh
+$ php init
+```
+
+### 2. 数据库迁移
+
+yii 默认的 user 表，可自行修改。
+
+``` sh
+$ php yii migrate/up
+```
+
+### 3. 添加管理员
+
+用户名: admin
+密码: 123123
+自定义修改: console/controllers/InitController.php
+
+``` sh
+$ php yii init/admin
+```
+
+### 4. 配置完成
+
+可以使用了。
+
+
+## nginx 配置
 
 其他配置都一样，但是要开启 pathinfo 支持以及 rewrite。
 
